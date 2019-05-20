@@ -1,6 +1,8 @@
 const express = require("express"); // importing a CommonJS module
 const helmet = require("helmet");
 
+const projectRouter = require("./projectRouter.js");
+
 const server = express();
 
 server.use(express.json());
@@ -9,6 +11,7 @@ server.use(express.json());
 server.use(helmet());
 
 //Routes
+server.use("/api/projects", projectRouter);
 
 server.get("/", (req, res, next) => {
   res.send(`
