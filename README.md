@@ -31,11 +31,13 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
       Middleware is basically an array of functions that get introduced in the order they were written in the servercode, therefore, they are asynchronous code.
 
 - [ ] Describe a Resource?
+      A resource is an information that can be named. It is a noun, unique, and can be represented as data. It also has URL where it can be accessed.
 
 * [ ] What can the API return to help clients know if a request was successful?
       An API can return 2XX HTTP code to let a client know that its request was successful. Another way would be to return a JSON message.
 
 * [ ] How can we partition our application into sub-applications?
+      We can partition the backend by creating routes. In doing so, the server.js file won't be so cluttered with so many different endpoints from different parts of the website.
 
 ## Project Setup
 
